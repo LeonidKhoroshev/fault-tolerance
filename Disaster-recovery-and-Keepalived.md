@@ -43,6 +43,16 @@ exit 1
 fi
 ```
 
+Ссылка на конфигурационный файл Keepalived
+
+https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/keepalived.conf
+
+Скриншоты с демонстрацией плавающего ip
+
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery2.1.png)
+
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery2.2.png)
+
 ------
 
 ## Дополнительные задания со звёздочкой*
