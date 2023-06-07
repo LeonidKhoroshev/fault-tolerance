@@ -10,7 +10,7 @@
 
 Процесс настройки маршрутизатора Router0
 
-![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/edit/main/Disaster-recovery-and-Keepalived.md))
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery1.2.png)
 
 
 
