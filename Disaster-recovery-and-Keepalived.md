@@ -20,6 +20,8 @@
 
 ![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery1.3.png)
 
+https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/my_homework.pkt
+
 ------
 
 
