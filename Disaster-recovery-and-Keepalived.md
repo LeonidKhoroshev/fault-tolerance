@@ -12,7 +12,13 @@
 
 ![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery1.2.png)
 
+Процесс настройки маршрутизатора Router1
 
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery1.1.png)
+
+Скриншот получившейся схемы и файл в формате pkt (Cisco packet tracer)
+
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/disaster-and-keepalived/Recovery1.3.png)
 
 ------
 
