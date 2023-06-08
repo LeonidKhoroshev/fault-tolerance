@@ -20,6 +20,10 @@ https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-bala
 - HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
 - На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.
 
+Ссылка на конфигурационный файл haproxy2.cfg, измененный по условиям Задания 2.
+
+https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/haproxy2.cfg
+
 
 
 ---
