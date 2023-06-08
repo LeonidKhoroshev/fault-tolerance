@@ -24,7 +24,9 @@ https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-bala
 
 https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/haproxy2.cfg
 
+Скриншот с перенаправлением запросов
 
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/balancing2.1.png)
 
 ---
 
