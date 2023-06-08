@@ -6,6 +6,13 @@
 - Настройте балансировку Round-robin на 4 уровне.
 - На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy.
 
+Ссылка на конфигурационный файл haproxy.cfg
+
+https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/haproxy.cfg
+
+Скриншот с перенаправлением запросов
+
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/balancing1.1.png)
 
 ### Задание 2
 - Запустите три simple python сервера на своей виртуальной машине на разных портах
