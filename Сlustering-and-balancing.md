@@ -64,6 +64,12 @@ https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-bala
 
 Конфигурационнй файл haproxy (в нем мы используем две секции backend - example1 и example2)
 
+https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/haproxy4.cfg
+
+Скриншот работы сервиса
+
+![alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-balancing/balancing4.png)
+
 ------
 
 
