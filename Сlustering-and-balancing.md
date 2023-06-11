@@ -62,6 +62,7 @@ https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/clustering-and-bala
 - Настройте фронтенд HAProxy так, чтобы в зависимости от запрашиваемого сайта example1.local или example2.local запросы перенаправлялись на разные бэкенды HAProxy
 - На проверку направьте конфигурационный файл HAProxy, скриншоты, демонстрирующие запросы к разным фронтендам и ответам от разных бэкендов.
 
+Конфигурационнй файл haproxy (в нем мы используем две секции backend - example1 и example2)
 
 ------
 
