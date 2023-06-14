@@ -26,6 +26,15 @@
 rsync -av --delete . /tmp/backup >> /var/log/crontab.log
 ```
 
+Кнфигурация crontab (показана в виде вывода команды crontab -l)
+
+![Alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/backup/backup2.1.png)
+
+Результат работы скрипта (crontab.sh сработал по расписанию, прилагаю информацию из логов)
+
+![Alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/backup/backup2.2.png)
+
+
 ---
 
 ## Задания со звёздочкой*
