@@ -25,7 +25,7 @@ resources {
 
 boot_disk {
   initialize_params {
-  image_id = "fd8oshj0osht8svg6rfs"
+  image_id = "fd8gofoi2nd7l75a612j"
   size = 10
   }
 }
