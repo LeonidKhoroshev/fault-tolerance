@@ -1,0 +1,22 @@
+#cloud-config
+disable_root: true
+timezone: Europe/Moscow
+repo_update: true
+repo_upgrade: true
+apt:
+  preserve_sourses_list: true
+packages:
+  - nginx
+runcmd:
+  - [ systemctl, nginx-reload ]
+  - [ systemctl, enable, nginx.service ]
+  - [ systemctl, start, --no-block, nginx.service ]
+  - [ sh, -c, "echo $(hostname | cut -d '.' -f 1 ) > /var/www/html/index.html" ]
+  - [ sh, -c, "echo $(ip add) >> /var/www/html/index.html" ]
+users:
+  - name: leonid
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEG+sEeRs/TjbFhL+HiJGnjYEuCReycMND5n6Ke3Y1EayrVrgl9MvDv/1XXxPSRAaqZSvSqKp4/vt1xeNqJunu0dnHpY89ZTI0mKyjxHnUvhj58XnhvOalJxhEhtdLuFyFqSXsux2na+Nn>ZcnLUJO2Skmw7n8= root@1392396-cz43230.tw1.ru
