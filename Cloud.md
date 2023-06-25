@@ -25,7 +25,7 @@
 
 
 
-1. Terraform Playbook.
+Terraform Playbook.
 
 ```
 terraform {
@@ -124,10 +124,50 @@ resource "yandex_lb_target_group" "test-1" {
   }
 }
 ```
+Metadata
 
-*2. Скриншот статуса балансировщика и целевой группы.*
+```
+#cloud-config
+disable_root: true
+timezone: Europe/Moscow
+repo_update: true
+repo_upgrade: true
 
-*3. Скриншот страницы, которая открылась при запросе IP-адреса балансировщика.*
+users:
+  - name: leonid
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEG+sEeRs/TjbFhL+HiJGnjYEuCReycMND5n6Ke3Y1EayrVrgl9MvDv/1XXxPSRAaqZSvSqKp4/vt1xeNqJunu0dnHpY89ZTI0mKyjxHnUvhj58XnhvOalJxhEhtdLuFyFqSXsux2na+Nn>ZcnLUJO2Skmw7n8= root@1392396-cz43230.tw1.ru
+```
+В качестве ОС виртуальных машин выбран Centos7, содержащий пакеты python и соответствующие зависимости.
+
+Следовательно, nginx на 2 хоста устанавливаем с помощью Ansible.
+
+Создаем файл inventory
+
+```
+[hosts]
+vm1 ansible_host=51.250.92.72 ansible_connection=ssh  ansible_ssh_user=leonid
+vm0 ansible_host=51.250.8.148 ansible_connection=ssh  ansible_ssh_user=leonid
+```
+
+Далее устанавливаем необходимые пакеты
+
+```
+ansible -i inventory all -m yum -a "name=epel-release" -b
+ansible -i inventory all -m yum -a "name=nginx" -b
+```
+
+Скриншот статуса балансировщика и целевой группы
+
+![Alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/cloud/cloud1.1.png)
+
+Скриншот страницы, которая открылась при запросе IP-адреса балансировщика
+
+![Alt text](https://github.com/LeonidKhoroshev/fault-tolerance/blob/main/cloud/cloud1.2.png)
+
 
 ---
 
